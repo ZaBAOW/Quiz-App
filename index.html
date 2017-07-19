@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css" type="text/css" />
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <title>US Citizenship Quiz</title>
+</head>
+
+<body>
+
+  <header class="title-section">
+    <h1 class="quizTitle">US Citizenship Quiz</h1>
+  </header>
+  <section class="start-section">
+    <p class="txt">Ready to take your US Citizenship Quiz? Click on Start to begin.</p>
+
+    <input type='button' value='Start' id='startBtn' class='btn btn-default classic-btn normal-btn'></input>
+  </section>
+  <section class="quiz-section">
+
+    <div class="questionContainer">
+      <p class="txt" id='question'>Add my question here</p>
+    </div>
+    <div class="radio" id='answers'>
+      <label><input type="radio" value='0' name="optradio">Option 1</label><br>
+
+    </div>
+    </div>
+    <div class="row nav-status-bar">
+      <div class="nav-row">
+        <div class="status-score">
+          <div class="col-3"><span class="status">Question: 1/10</span></div>
+          <div class="col-3"><span class="score">Score: 1/10</span></div>
+        </div>
+
+        <div class="nav-button">
+          <div class="col-3"><input type='button' value='Back' id='back-button' class="btn btn-default classic-btn normal-btn"></input>
+          </div>
+          <div class="col-3"><input type='button' value='Next' id='next-button' class="btn btn-default classic-btn normal-btn"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="result-section">
+    <div class="pass-fail">
+      <h4 class="txt-results">Pass or Failed</h4></div>
+    <div id='accordion'>
+      <h3 class="final-score" id='finalscore'>0/10</h3>
+      <div class="result-msg"></div>
+    </div>
+    <input type='button' value='Try Again' id='try-again' class='classic-btn normal-btn btn btn-default try-again'></input>
+  </section>
+
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/3/lodash.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+
+</body>
+
+</html>
