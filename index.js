@@ -1,4 +1,3 @@
-console.clear();
 
 const classes = {
 	correctMSG: ["Alright!", "Correct!", "That's it!"],
